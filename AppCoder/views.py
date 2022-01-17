@@ -4,8 +4,25 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def crear_curso(self, nombre, camada):
-    curso= Curso (nombre= nombre, camada= camada)
-    curso.save()
-    documentoDeTexto= f'Se creo el curso de {curso.nombre} de la camada {curso.camada}'
-    return HttpResponse(documentoDeTexto)
+def inicio(request):
+    
+    return render (request,"AppCoder/inicio.html")
+
+def cursos(request):
+    
+    return render (request,"AppCoder/cursos.html")
+
+def profesores(request):
+    
+    return render (request,"AppCoder/profesores.html")
+
+def estudiantes(request):
+    
+    return render (request,"AppCoder/estudiantes.html")
+
+
+def entregable(request):
+    
+    return render (request,"AppCoder/entregables.html")
+
+

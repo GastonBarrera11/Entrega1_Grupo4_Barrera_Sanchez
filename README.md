@@ -1,2 +1,0 @@
-# ProyectoCoder
-Primer proyecto python
